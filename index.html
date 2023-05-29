@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://go.ringcentral.com/rs/075-DTB-715/images/RingCentral-Favicon.ico" type="image/vnd.microsoft.icon" rel="shortcut icon">
+    <link href="https://go.ringcentral.com/rs/075-DTB-715/images/RingCentral-Favicon.ico" type="image/vnd.microsoft.icon" rel="icon">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Scroll Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Snippet Gallery | RingCentral</title>
+
+    <style>
+        .greenBG {
+            background: #1d3c34;
+        }
+        .blueBG {
+            background: #006fac;
+        }
+        .blackText {
+            color: #222222;
+        }
+        .brand-logo {
+            padding-top: 7px!important;
+        }
+        #banner-section {
+            background: url(https://go.ringcentral.com/rs/075-DTB-715/images/Email-Gallery-BG.png) no-repeat;
+            background-size: cover;
+            padding: 50px 0 200px 0;
+        }
+        #main-section {
+            margin-top: -150px;
+        }
+        #main-section .row {
+            margin-bottom: 0;
+        }
+        #main-section .container .z-depth-2 {
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 50px;
+        }
+        .card-image {
+            background: #002855;
+        }
+        .card-image img {
+            margin: auto;
+            width: 100%!important;
+        }
+        footer {
+            background: #002855;
+            /* padding: 10px 0; */
+        }
+        footer a, .copy {
+            color: rgba(255,255,255, 0.6)!important;
+            font-size: 12px;
+        }
+        footer .copy {
+            padding: 25px 0 20px 0 !important;
+        }
+        footer .social-icons li{
+            display: inline-block;
+            padding-right: 10px;
+        }
+        .social-icons {
+            padding-top: 5px;
+        }
+        footer .footer-links li {
+            border-right: solid 1px rgba(255,255,255, 0.6);
+            display: inline-block;
+            padding: 0 10px 3px 10px;
+        }
+        .footer-links {
+            padding-top: 5px;
+        }
+        footer .footer-links li:last-child {
+            border-right: solid 0px rgba(255,255,255, 0.6);
+        }
+        footer .row {
+            margin-bottom: 0;
+        }
+        .modal h4 {
+            padding: 20px 0;
+        }
+        #filter-container {
+            background: #CCCCCC;;
+            display: none;
+        }
+        #filter-container {
+            padding: 20px;
+        }
+        #filter-dropdown {
+            margin: 20px 0;
+        }
+        .row.grid {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="white">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/Update-RingCentral-Logo-No-registered-mark.png" alt="RingCentral Logo"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger black-text"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="https://go.ringcentral.com/Requests4Marketing.html" class="waves-effect waves-l5ght btn blueBG">Submit a request</a></li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+    
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Email Gallery</a></li>
+        <li><a href="badges.html">Landing Page Gallery</a></li>
+        <li><a href="badges.html">Snippet Gallery</a></li>
+      </ul>
+
+    <section class="greenBG" id="banner-section">
+        <div class="container">
+            <h1 class="white-text center">Landing Page Gallery</h1>
+            <h5 class="white-text center">Compilations of the Landing Pages in Marketo.</h3>
+        </div>
+    </section>
+
+    <section id="main-section">
+        <div class="container">
+            <div class="z-depth-2 white">
+                <a class="waves-effect waves-light btn blueBG" id="filter-dropdown"><i class="material-icons left">filter_list</i>Filter</a>
+                <div class="row" id="filter-container">
+                    <div class="col s12">
+                        <h6>Landing page type</h6>
+                        <div class="col s6 m2">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" value="Events" />
+                                    <span class="blackText">Events</span>
+                                </label>
+                            </p>
+                        </div>
+                        <div class="col s6 m2">
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" value="Webinars" />
+                                    <span class="blackText">Webinars</span>
+                                </label>
+                            </p>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="row grid">
+                    <div class="col s12 m6 l4 grid-items email channel partner">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-APAC-Partner-Non-Operational.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal1"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-APAC-Partner-Non-Operational</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1558B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email channel france partner">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Partner-Non-Operational.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal2"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Partner-Non-Operational</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1559B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email channel germany partner">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Germany-Partner-Non-Operational.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal3"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Germany-Partner-Non-Operational</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1560B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email channel partner">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-UKEMEA-Partner-Non-Operational.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal4"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-UKEMEA-Partner-Non-Operational</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1561B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email channel partner">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-US-Partner-Non-Operational.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal5"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-US-Partner-Non-Operational</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1562B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col s12 m6 l4 grid-items email dimelo france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social %28FR language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal6"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social (FR language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1378B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social %28EN language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal7"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social (EN language).png</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1387B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage %28FR Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal8"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage (FR Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1393B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Non-Customer-Promo %28English Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal9"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Non-Customer-Promo (English Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN254B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Customer-Promo %28English Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal10"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Customer-Promo (English Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN258B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-RCEngage-Social %28FR language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal11"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Client-RCEngage-Social (FR language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1376B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social %28EN language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal12"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (EN language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1385B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - DM-EM-Footer-FR-Client-Operational %28FR Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal13"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - DM-EM-Footer-FR-Client-Operational (FR Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1396B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage %28FR Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal14"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Client-Promo-RCEngage (FR Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1391B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dimelo france customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - DM-EM-Footer-FR-Client-Operational %28EN Language%29.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal15"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - DM-EM-Footer-FR-Client-Operational (EN Language)</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN467B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col s12 m6 l4 grid-items email france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social %28FR language%29 - Black text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal16"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social (FR language) - Black text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1521B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email france non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social %28FR language%29 - White text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal17"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social (FR language) - White text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1526B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - White text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal18"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - White text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1545B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social %28FR language%29 - White text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal19"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (FR language) - White text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1524B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - Black text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal20"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - Black text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1539B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - Black text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal21"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - Black text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1509B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - White text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal22"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - White text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1549B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic customer operational">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - White text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal23"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - White text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1511B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Customer-Social - Black text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal24"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Dynamic-Customer-Social - Black text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1500B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Customer-Social - White text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal25"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Dynamic-Customer-Social - White text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1481B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - Black text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal26"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - Black text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1502B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - White text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal27"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - White text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1496B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email france customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social %28FR language%29 - Black text color.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal28"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (FR language) - Black text color</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1519B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+
+                    <div class="col s12 m6 l4 grid-items landing-page dynamic">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - Landing Page Footer.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal29"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - Landing Page Footer</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1429B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items landing-page france">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - Landing Page Footer - French.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal30"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - Landing Page Footer - French</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1533B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col s12 m6 l4 grid-items email dynamic non-customer">
+                        <div class="card">
+                            <div class="card-image match valign-wrapper">
+                            <img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - Black text.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light blueBG btn modal-trigger" data-target="modal31"><i class="material-icons">pageview</i></a>
+                            </div>
+                            <div class="card-content">
+                            <span class="match card-title name">ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - Black text</span>
+                            <p><a href="https://engage-ab.marketo.com/?munchkinId=075-DTB-715#/classic/SN1544B2" target="_blank">Marketo link</a></p>
+                            </div>
+                            </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+
+     <!-- Modal Structure -->
+     <div id="modal1" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-APAC-Partner-Non-Operational</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-APAC-Partner-Non-Operational.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Partner-Non-Operational</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Partner-Non-Operational.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Germany-Partner-Non-Operational</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Germany-Partner-Non-Operational.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-UKEMEA-Partner-Non-Operational</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-UKEMEA-Partner-Non-Operational.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-US-Partner-Non-Operational</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-US-Partner-Non-Operational.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social (FR language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social %28FR language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social (EN language).png</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage-Social %28EN language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage (FR Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospect-Promo-RCEngage %28FR Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Non-Customer-Promo (English Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Non-Customer-Promo %28English Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal10" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Customer-Promo (English Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Customer-Promo %28English Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal11" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Client-RCEngage-Social (FR language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-RCEngage-Social %28FR language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal12" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (EN language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social %28EN language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal13" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - DM-EM-Footer-FR-Client-Operational (FR Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - DM-EM-Footer-FR-Client-Operational %28FR Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal14" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Client-Promo-RCEngage (FR Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage %28FR Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal15" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - DM-EM-Footer-FR-Client-Operational (EN Language)</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - DM-EM-Footer-FR-Client-Operational %28EN Language%29.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal16" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social (FR language) - Black text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social %28FR language%29 - Black text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal17" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social (FR language) - White text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Prospects-RCEngage-Social %28FR language%29 - White text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal18" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - White text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - White text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal19" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (FR language) - White text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social %28FR language%29 - White text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal20" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - Black text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - Black text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal21" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - Black text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - Black text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal22" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - White text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Confirmation-Promo-Dynamic - White text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal23" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - White text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Customer-OPERATIONAL-Dynamic - White text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal24" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Dynamic-Customer-Social - Black text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Customer-Social - Black text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal25" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Dynamic-Customer-Social - White text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Customer-Social - White text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal26" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - Black text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - Black text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal27" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - White text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Dynamic-Non-Customer-Social - White text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal28" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (FR language) - Black text color</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-FR-Client-Promo-RCEngage-Social (FR language%29 - Black text color.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal29" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - Landing Page Footer</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - Landing Page Footer.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal30" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - Landing Page Footer - French</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - Landing Page Footer - French.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <div id="modal31" class="modal modal-fixed-footer center-align">
+        <div class="modal-content">
+        <h4>ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - Black text</h4>
+        <p><img src="https://go.ringcentral.com/rs/075-DTB-715/images/ACTIVE - EM-Footer-Non-Customer-Text-Only-Dynamic - Black text.png" width="100%"></p>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m3 center-align">
+                    <ul class="social-icons">
+                        <li><a href="http://facebook.com/ringcentral"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/social-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="http://twitter.com/ringcentral"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/social-twitter.png" alt="Twitter"></a></li>
+                        <li><a href="https://www.linkedin.com/company/ringcentral/"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/social-linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="https://www.youtube.com/user/ringcentral"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/social-youtube.png" alt="Youtube"></a></li>
+                        <li><a href="https://www.instagram.com/ringcentral"><img src="https://go.ringcentral.com/rs/075-DTB-715/images/social-instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4 center-align">
+                    <ul class="footer-links">
+                        <li><a href="https://www.ringcentral.com/legal.html">Legal</a></li>
+                        <li><a href="http://www.ringcentral.com/legal/privacy-notice.html">Privacy Notice</a></li>
+                        <li><a href="https://www.ringcentral.com/sitemap.html">Site Map</a></li>
+                        <li><a href="https://www.ringcentral.com/whyringcentral/contactus.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m5 copy center-align">© 1999- 2021 RingCentral, Inc. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Scroll Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://go.ringcentral.com/rs/075-DTB-715/images/jquery.matchHeight.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+        
+        $(function(){
+            AOS.init();
+
+            var $grid = $('.grid');
+
+            var filterVal = [];
+
+            $("#filter-container input").change(function(){
+                var selectionArray = [];
+                $("#filter-container input:checked").each(function(){
+                    selectionArray.push("."+$(this).val());
+                });
+                var filterVal = selectionArray.join('');
+                
+                $grid.isotope({ 
+                    filter:  filterVal,
+                    layoutMode: 'fitRows'
+                });
+            });
+
+            $(".match").matchHeight({byRow: false});
+
+            $("#filter-dropdown").click(function(){
+                $("#filter-container").slideToggle();
+            });
+
+        });
+                
+    </script>
+</body>
+</html>
